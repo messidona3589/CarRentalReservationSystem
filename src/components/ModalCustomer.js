@@ -91,7 +91,7 @@ const ModalCustomer = ({cusId, visible, setVisible, onInsert}) => {
   const onSubmit = useCallback(
     e => {
       e.preventDefault();
-      if (fullName && contact && idCard && address){
+      if (fullName!=='' && contact!=='' && idCard!=='' && address!==''){
         onInsert({
           _id : cusId,
           fullName : fullName,

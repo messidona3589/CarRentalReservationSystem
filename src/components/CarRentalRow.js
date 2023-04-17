@@ -24,7 +24,7 @@ const CarRentalRow = ({car, onEdit, onRemove}) => {
       <td style={{display : "flex"}}>
         {edit ? (
             <>
-              <button onClick={() => {onEdit(_id, {_id:newCarId, model: newModel, type:newType, color:newColor, cost:newCost, available: newUnit}); setEdit(!edit)}}>Apply</button>
+              <button onClick={() => {onEdit(_id, {_id:newCarId, model: newModel, type:newType, color:newColor, cost:newCost, unit: newUnit}); setEdit(!edit)}}>Apply</button>
               <button onClick={() => {setEdit(!edit); setNewModel(model);setNewColor(color);setNewCost(cost);}}>Close</button>
             </>
           ) : (

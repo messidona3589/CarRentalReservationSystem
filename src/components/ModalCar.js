@@ -74,16 +74,16 @@ const ModalStyle = {
 
 const ModalCar = ({visible, setVisible, onInsert, carId}) => {
   //New Car
-  const [model, setModel] = useState();
-  const [type, setType] = useState();
-  const [color, setColor] = useState();
-  const [cost, setCost] = useState();
-  const [unit, setUnit] = useState();
+  const [model, setModel] = useState('');
+  const [type, setType] = useState('');
+  const [color, setColor] = useState('');
+  const [cost, setCost] = useState('');
+  const [unit, setUnit] = useState('');
 
   const onSubmit = useCallback(
     e => {
       e.preventDefault();
-      if (model && type && color && cost && unit){
+      if (model!=='' && type!=='' && color!=='' && cost!=='' && unit!==''){
         onInsert({
         _id : carId,
         model : model,
@@ -93,11 +93,11 @@ const ModalCar = ({visible, setVisible, onInsert, carId}) => {
         unit : unit
         });
         //initialize
-        setModel();
-        setType();
-        setColor();
-        setCost();
-        setUnit();
+        setModel('');
+        setType('');
+        setColor('');
+        setCost('');
+        setUnit('');
       } else {
         alert("There is a blank section");
       }

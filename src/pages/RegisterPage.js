@@ -74,12 +74,12 @@ const RegisterPageBlock = styled.div`
 
 const RegisterPage = () => {
   const navigate = useNavigate();
-  const [newUsername, setNewUsername] = useState();
-  const [newPassword, setNewPassword] = useState();
-  const [newConfirmPassword, setNewConfirmPassword] = useState();
-  const [newFullName, setNewFullName] = useState();
-  const [newEmail, setNewEmail] = useState();
-  const [newContact, setNewContact] = useState();
+  const [newUsername, setNewUsername] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [newConfirmPassword, setNewConfirmPassword] = useState('');
+  const [newFullName, setNewFullName] = useState('');
+  const [newEmail, setNewEmail] = useState('');
+  const [newContact, setNewContact] = useState('');
   const [newId, setNewId] = useState(2);
 
   const onSubmit = e => {

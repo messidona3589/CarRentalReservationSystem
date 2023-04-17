@@ -6,8 +6,8 @@ import { useState } from "react";
 
 const DashboardPageBlock = styled.div`
 
-  background : url(/images/BMW.jpg);
-  background-size : 1000px;
+  background : url(https://img.freepik.com/free-vector/realistic-car-headlights-ad-composition-headlights-with-green-purple-illumination_1284-56577.jpg?w=1380&t=st=1681632100~exp=1681632700~hmac=a12f1547272e0f596ff4b1b0e6f93f520821aa082ed22b7e2238217a70d8e7c4);
+  background-size : 1400px;
 
   min-height : 500px;
   

@@ -77,11 +77,11 @@ const TransactionRow = ({transactions, cars, transaction, onEdit, onRemove}) => 
           <>
             <EditButton onClick={() => {
               let transNo = prompt('Enter in the transaction Number for confirmation', '');
-              if (transNo===transactionNo) setEdit(!edit);
+              if (transNo===transactionNo || Number(transNo)===transactionNo) setEdit(!edit);
             }} />
             <RemoveButton onClick={() => {
               let transNo = prompt('Enter in the transaction Number for confirmation', '');
-              if (transNo===transactionNo) onRemove(transactionNo);
+              if (transNo===transactionNo || Number(transNo)===transactionNo) onRemove(transactionNo);
               }}
             />
           </>
